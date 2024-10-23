@@ -1,3 +1,14 @@
-Hello, world!
-Changes in main branch!
-Changes in branch1!
+Task 1
+1. Create a local repository --> git init
+2. Add file1.txt file and commit it --> git add -A, git commit -m "ZZZ ZZZ"
+3. Connect to a remote repository (create a repository on https://github.com/)
+4. Send local repository to a remote server--> git remote add origin https://github.com/username/repository.git, git push origin main
+5. Configure git to ignore files with .class extension and target folder (including all of its content) 
+Added in .gitignore lines 
+*.class
+target/
+6. Change file1.txt and send changes to the server--> git add -A, git commit -m "ZZZ ZZZ", git push origin main
+7. Create a new branch named branch1 --> git checkout -b branch1
+8. In the new branch change file1.txt file and send changes to the server --> git add -A, git commit -m "YYY YYY", git push origin main
+9. Merge branches branch1 and master and send changes to the server --> git checkout main, git merge branch1
+10. Delete branch1 branch and send changes on the server --> git branch -d branch1, git push origin --delete branch1
